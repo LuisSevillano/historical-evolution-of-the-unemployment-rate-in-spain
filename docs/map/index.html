@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="../lib/d3/d3.js" type="text/javascript"></script>
+    <link href="css/mapa.css" rel="stylesheet" type="text/css" />
+    <title>EL PARO POR PROVINCIAS</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="datosMapa">
+        <div id="cajaDatos">
+          <div id="tasa-parados">
+            <div id="tasa"></div>
+            <div id="year"></div>
+          </div>
+          <div id="maxMin">
+            <div id="mediaParo"></div>
+            <div class="mediaNacional">media nacional</div>
+            <div class="icono">
+              <div id="maximoParo"></div>
+              <div class="iconoMaximo"></div>
+            </div>
+            <div class="icono">
+              <div id="minimoParo"></div>
+              <div class="iconoMinimo"></div>
+            </div>
+          </div>
+        </div>
+        <div id="mapas">
+          <div id="mapa"></div>
+          <div id="canarias"></div>
+        </div>
+        <div id="leyenda">
+          <div class="key">
+            <div class="masCinco">
+              <div class="textoLeyenda color"><span>10%</span></div>
+            </div>
+          </div>
+          <div class="key">
+            <div class="masQuince">
+              <div class="textoLeyenda color"><span>20</span></div>
+            </div>
+          </div>
+          <div class="key">
+            <div class="masVeinticinco">
+              <div class="textoLeyenda color"><span>30</span></div>
+            </div>
+          </div>
+          <div class="key">
+            <div class="masTreintaYCinco">
+              <div class="textoLeyenda color"><span>40</span></div>
+            </div>
+          </div>
+          <div class="key">
+            <div class="masCuarenta">
+              <div class="textoLeyenda color"></div>
+            </div>
+          </div>
+          <!--
+            <div class="k"><div class="color" style="background: rgb(255, 231, 235);"></div><div class="text"><span>2%</span></div></div>
+          -->
+        </div>
+      </div>
+      <div id="cajaSlider">
+        <div class="mano"></div>
+        <div id="slider"></div>
+        <div class="inicio">2005</div>
+        <div class="final">2015</div>
+      </div>
+      <script src="mapa.js" type="text/javascript"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+/* Author(s) = Manuel Maroto (@manuelgmaroto), Luis Sevillano (@SepirData)
+ * Date: 2014 Oct
+ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+h4{font-size: 15px;}
+b{font-weight: bold;font-size: 1em;}
+i{font-style: italic;}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #777;
+    overflow: scroll;
+}
+
+#wrapper{
+    width: 970px;
+
+    font-size: 1em;
+    margin: 10px;
+}
+
+div.tooltip{
+    position: absolute;
+    text-align: left;
+    width: auto;
+    color: #777;
+
+    padding: 10px;
+    font-size: 1em;
+    background: white;
+    border: 1px solid #ddd;
+    pointer-events: none;
+    line-height: 14px;
+    z-index: 2;
+    padding: 10px;
+    opacity: 0;
+    line-height: 22px;
+}
+
+.area{
+    fill: #F8D2C7;
+}
+
+.rangoFechas{
+    color: #555;
+    font-size: 12px;
+}
+.rangoFechas i{
+    font-size: 14px;
+}
+#mes i{
+    font-size: 14px;
+    color: #555;
+}
+.yLabel path,
+.yLabel line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.xLabel path,
+.xLabel line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.xLabel, .yLabel {
+    font-size: 12px;
+    fill: #777;
+}
+#contenedorGrafico{
+    float: left;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.grid{
+    stroke: black;
+    stroke-width:1px;
+    opacity: 0.1;
+
+}
+
+line{
+    opacity: 1;
+    stroke-width: 1px;
+}
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+path.slice{
+    stroke: white;
+    stroke-width: 1;
+    z-index: 0;
+}
+.polyline{
+    z-index: 2;   
+}
+#contenedorDonut{
+    //border: 1px solid black;
+    float: left;
+    margin-top: 45px;
+    width: 520px;
+    height: 310px;
+}
+#donut{
+    margin-top: 10px;
+    font-size: 13px;
+}
+g.slices{cursor: pointer;}
+.total{
+    font-size: 16px;
+    font-weight: bold;
+    fill: #777;
+}
+.label{
+    fill: #777;
+    font-size: 11px;
+    font-weight: bold;
+}
+.units{
+    fill: gray;
+    font-size: 12px;
+}
+.chart rect {stroke: white;fill: #C46448;}
+.chart text {fill: #777;}
+.chart text.name {fill: #777;}
+.chart line {stroke: #c1c1c1;stroke-width:1px;opacity: 1;}
+.chart .rule {fill: #777;}
+#barrasH .chart rect {stroke: none;}
+#barrasM .chart rect {stroke: none;}
+#barrasH .chart rect:hover {fill: #E28F77}
+#barrasM .chart rect:hover {fill: #E28F77}
+#barrasH{width: 450px;float: left}
+#barrasH svg.chart{float: right}
+#edades{width: 60px;float: left}
+#barrasM{width: 420px;float: left}
+.men{position: relative;top: -300px;left: 31px;z-index: -1;}
+.women{position: relative;top: -200px;left: 880px;z-index: -1;}
+.edades{font-size: 14px;padding-top: 35px;fill:#777;}
+#graficasexos{float:left;padding-top: 50px;width: 950px;}
+.rule{font-size: 12px;}
+text.values{font-size: 13px;}
+#barrasInter{float: left;margin-top:45px;/* border: solid black 1px; */}
+.barr{padding-left: 10px;}
+.barr text{fill:#777;}
+#ast{font-size: 13px;}
+#trimestre, #mes,#sexos{line-height: 20px;}
+#barrasInter svg rect{cursor: pointer;}
+#hombre{top: 5px;height: 40px;width: 40px;float:left;        }
+#graficasexos rect{cursor: pointer;}
+text.values,text.name,text.rule,g.labels,text.xLabel{pointer-events: none}
+#tituloH{float: left;font-size: 14px;padding-top: 10px;}
+#tituloM{float:right;font-size: 14px;padding-top: 10px;}
+#mujer{
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    float: right;
+
+
+
+}
